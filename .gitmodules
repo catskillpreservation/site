@@ -1,0 +1,3 @@
+[submodule "themes/vanilla"]
+	path = themes/vanilla
+	url = https://github.com/catskillpreservation/hugo-theme.git
