@@ -28,5 +28,6 @@ jobs:
         repository-name: catskillpreservation/catskillpreservation.github.io
         branch: main
         folder: public
+        token: ${{ secrets.DEPLOY_TOKEN }}
         clean-exclude: |
           CNAME
