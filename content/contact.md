@@ -1,6 +1,7 @@
 ---
 title: Contact
 url: /contact/
+hideTitle: true
 ---
 ### About
 You are welcome to use, copy, modify, and distribute any of the content on this site. Credit is appreciated but is not necessary. 
