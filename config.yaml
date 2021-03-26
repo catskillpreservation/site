@@ -18,10 +18,10 @@ menu:
     pre: home
     url: /
     weight: 1
-  # - name: Blog
-  #   pre: edit
-  #   url: /post/
-  #   weight: 2
+  - name: Contact
+    pre: contact
+    url: /contact/
+    weight: 2
   # - name: Tags
   #   pre: tag
   #   url: /tags/
