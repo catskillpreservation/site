@@ -3,6 +3,7 @@ on:
   push:
     branches:
     - preview
+  workflow_dispatch:
 
 jobs:
   build-deploy:
