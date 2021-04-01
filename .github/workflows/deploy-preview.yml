@@ -28,6 +28,6 @@ jobs:
         repository-name: catskillpreservation/preview
         branch: main
         folder: public
-        token: ${{ secrets.DEPLOY_TOKEN }}
+        token: ${{ secrets.ALL_TOKEN }}
         clean-exclude: |
           CNAME
