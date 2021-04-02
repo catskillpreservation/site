@@ -20,7 +20,7 @@ jobs:
             cd ./content/comments/P-15056-000
             git config user.name sommea
             git config user.email asommer999@gmail.com
-            git pull origin main --allow-unrelated-histories
+            git pull origin main
       - name: commit submodules
         run: |
             git config user.name sommea
