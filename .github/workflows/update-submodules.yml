@@ -28,5 +28,7 @@ jobs:
             git add .
             git commit -m "Updated submodules" || echo "No changes to commit"
             git push
+            git submodules update --init --recursive
+
 
           
