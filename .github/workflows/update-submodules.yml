@@ -17,13 +17,12 @@ jobs:
           token: ${{ secrets.DEPLOY_TOKEN }}
       - name: update submodules
         run: |
-            
             cd ./content/comments/P-15056-000
+            git config user.name sommea
+            git config user.email asommer999@gmail.com
             git pull origin main --allow-unrelated-histories
       - name: commit submodules
         run: |
-            git config user.name sommea
-            git config user.email asommer999@gmail.com
             git commit -m "Added license headers" || echo "No changes to commit"
             git push
 
