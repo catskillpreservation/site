@@ -23,7 +23,9 @@ jobs:
             git pull origin main --allow-unrelated-histories
       - name: commit submodules
         run: |
-            git commit -m "Added license headers" || echo "No changes to commit"
+            git commit -m "Updated submodules" || echo "No changes to commit"
+            git config user.name sommea
+            git config user.email asommer999@gmail.com
             git push
 
           
