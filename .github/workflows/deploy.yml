@@ -33,3 +33,4 @@ jobs:
         token: ${{ secrets.DEPLOY_TOKEN }}
         clean-exclude: |
           CNAME
+          404.md
