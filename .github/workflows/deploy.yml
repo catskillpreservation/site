@@ -57,6 +57,14 @@ jobs:
         submodules: true
         token: ${{ secrets.DEPLOY_TOKEN }}
         ref: 'preview'
+        
+    - name: Add comment submodule
+      uses: actions/checkout@v2
+      with:
+        repository: catskillpreservation/P-15056-000-comments
+        path: content/comments/P-15056-000
+        token: ${{ secrets.DEPLOY_TOKEN }}
+        ref: 'main'
 
     
     - name: Setup Hugo
