@@ -1,6 +1,3 @@
 [submodule "themes/vanilla"]
 	path = themes/vanilla
 	url = https://github.com/catskillpreservation/hugo-theme.git
-[submodule "content/comments/P-15056-000"]
-	path = content/comments/P-15056-000
-	url = https://github.com/catskillpreservation/P-15056-000-comments
