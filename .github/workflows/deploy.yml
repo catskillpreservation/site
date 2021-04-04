@@ -4,10 +4,11 @@ on:
   push:
     branches:
     - main
+    - preview
   workflow_dispatch:
 
 jobs:
-  build-deploy:
+  build-main:
     runs-on: ubuntu-18.04
     steps:
     - name: Checkout github
@@ -15,6 +16,7 @@ jobs:
       with:
         submodules: true
         token: ${{ secrets.DEPLOY_TOKEN }}
+        ref: 'main'
 
     
     - name: Setup Hugo
@@ -35,3 +37,32 @@ jobs:
         clean-exclude: |
           CNAME
           404.md
+
+  build-preview:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Checkout github
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+        token: ${{ secrets.DEPLOY_TOKEN }}
+        ref: 'preview'
+
+    
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.62.1'
+        extended: true
+
+    - run: hugo --minify
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@4.1.0
+      with:
+        repository-name: catskillpreservation/preview
+        branch: main
+        folder: public
+        token: ${{ secrets.DEPLOY_TOKEN }}
+        clean-exclude: |
+          CNAME
