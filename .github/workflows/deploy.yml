@@ -6,6 +6,7 @@ on:
     - main
     - preview
   workflow_dispatch:
+  repository_dispatch:
 
 jobs:
   build-main:
