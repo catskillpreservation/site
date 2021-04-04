@@ -1,4 +1,4 @@
-name: Deploy to catstillpreservation.github.io
+name: Deploy to Main and Preview
 
 on:
   push:
