@@ -18,9 +18,13 @@ jobs:
         token: ${{ secrets.DEPLOY_TOKEN }}
         ref: 'main'
 
-    - name: Update submodules
-      run: |
-       git submodule update --recursive --remote
+    - name: Add comment submodule
+      uses: actions/checkout@v2
+      with:
+        repository: catskillpreservation/P-15056-000-comments
+        path: content/comments/P-15056-000
+        token: ${{ secrets.DEPLOY_TOKEN }}
+        ref: 'main'
 
 
     
