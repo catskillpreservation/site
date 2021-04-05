@@ -22,6 +22,10 @@ menu:
     pre: contact
     url: /contact/
     weight: 2
+  - name: Comments
+    pre: comments
+    url: /comments/
+    weight: 2
   # - name: Tags
   #   pre: tag
   #   url: /tags/
