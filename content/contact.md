@@ -11,6 +11,7 @@ This site is meant to serve as an archive of resources surrounding Premium Energ
 I can be contacted at brookeparslow@gmail.com. You can also [open issues on Github](https://github.com/catskillpreservation/site/issues) or leave comments on the [Discussion tab](https://github.com/catskillpreservation/site/discussions).
 
 Please reach out if:
+* You want your comment removed from the comments page,
 * I’m missing any sources or information that you consider important,
 * you find any inaccuracies,
 * you think something is confusing, or
