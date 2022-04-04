@@ -1,4 +1,4 @@
-baseURL: http://catskillpreservation.com
+baseURL: https://catskillpreservation.com
 languageCode: en-us
 title: Catskill Preservation
 theme: vanilla
@@ -18,13 +18,9 @@ menu:
     pre: home
     url: /
     weight: 1
-  - name: Contact
-    pre: contact
+  - name: About
+    pre: about
     url: /contact/
-    weight: 2
-  - name: Comments
-    pre: comments
-    url: /comments/
     weight: 2
   # - name: Tags
   #   pre: tag
