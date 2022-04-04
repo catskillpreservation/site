@@ -19,7 +19,7 @@ menu:
     url: /
     weight: 1
   - name: About
-    pre: about
+    pre: contact
     url: /contact/
     weight: 2
   # - name: Tags
